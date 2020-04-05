@@ -21,9 +21,10 @@ P 6900 2450
 AR Path="/5E889F96/5E891CC4" Ref="U?"  Part="1" 
 AR Path="/5E891CC4" Ref="U1"  Part="1" 
 F 0 "U1" H 7100 2700 50  0000 L CNN
-F 1 "UA741" H 7100 2600 50  0000 L CNN
+F 1 "UA741CDR‎" H 7100 2600 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7000 2550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ua741.pdf" H 7100 2650 50  0001 C CNN
+F 4 "TI" H 6900 2450 50  0001 C CNN "Manufacturer"
 	1    6900 2450
 	1    0    0    -1  
 $EndComp
@@ -61,6 +62,7 @@ F 0 "Q2" H 7891 2496 50  0000 L CNN
 F 1 "2STN1550" H 7891 2405 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7900 2375 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/2ST(F,N)1550.pdf" H 7700 2450 50  0001 L CNN
+F 4 "ST" H 7700 2450 50  0001 C CNN "MAnufacturer"
 	1    7700 2450
 	1    0    0    -1  
 $EndComp
@@ -150,9 +152,10 @@ L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E89243C
 P 1050 1350
 F 0 "J1" H 970 1025 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 970 1116 50  0000 C CNN
+F 1 "1729128" H 970 1116 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1050 1350 50  0001 C CNN
-F 3 "~" H 1050 1350 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1729128.pdf" H 1050 1350 50  0001 C CNN
+F 4 "Phoenix" H 1050 1350 50  0001 C CNN "Manufacturer"
 	1    1050 1350
 	-1   0    0    1   
 $EndComp
@@ -161,54 +164,55 @@ L Connector:Screw_Terminal_01x02 J2
 U 1 1 5E89247F
 P 1350 2850
 F 0 "J2" H 1430 2842 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 1430 2751 50  0000 L CNN
+F 1 "1729128" H 1430 2751 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1350 2850 50  0001 C CNN
-F 3 "~" H 1350 2850 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1729128.pdf" H 1350 2850 50  0001 C CNN
+F 4 "Phoenix" H 1350 2850 50  0001 C CNN "Manufacturer"
 	1    1350 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5E892555
-P 3300 1450
-F 0 "D1" V 3338 1333 50  0000 R CNN
-F 1 "LED" V 3247 1333 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3300 1450 50  0001 C CNN
-F 3 "~" H 3300 1450 50  0001 C CNN
-	1    3300 1450
+P 3000 1450
+F 0 "D1" V 3038 1333 50  0000 R CNN
+F 1 " 475-2486-1-ND " V 2947 1333 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 1450 50  0001 C CNN
+F 3 "~" H 3000 1450 50  0001 C CNN
+	1    3000 1450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D2
 U 1 1 5E892628
-P 3300 3050
-F 0 "D2" V 3338 2933 50  0000 R CNN
-F 1 "LED" V 3247 2933 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3300 3050 50  0001 C CNN
-F 3 "~" H 3300 3050 50  0001 C CNN
-	1    3300 3050
+P 3000 3050
+F 0 "D2" V 3038 2933 50  0000 R CNN
+F 1 "475-2486-1-ND" V 2947 2933 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 3050 50  0001 C CNN
+F 3 "~" H 3000 3050 50  0001 C CNN
+	1    3000 3050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5E892753
-P 3300 1150
-F 0 "R1" H 3370 1196 50  0000 L CNN
-F 1 "10k" H 3370 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3230 1150 50  0001 C CNN
-F 3 "~" H 3300 1150 50  0001 C CNN
-	1    3300 1150
+P 3000 1150
+F 0 "R1" H 3070 1196 50  0000 L CNN
+F 1 "10k" H 3070 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2930 1150 50  0001 C CNN
+F 3 "~" H 3000 1150 50  0001 C CNN
+	1    3000 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5E8927CA
-P 3300 2750
-F 0 "R2" H 3370 2796 50  0000 L CNN
-F 1 "10k" H 3370 2705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3230 2750 50  0001 C CNN
-F 3 "~" H 3300 2750 50  0001 C CNN
-	1    3300 2750
+P 3000 2750
+F 0 "R2" H 3070 2796 50  0000 L CNN
+F 1 "10k" H 3070 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2930 2750 50  0001 C CNN
+F 3 "~" H 3000 2750 50  0001 C CNN
+	1    3000 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -262,23 +266,23 @@ Wire Wire Line
 $Comp
 L power:GND #PWR011
 U 1 1 5E897ECE
-P 3300 3200
-F 0 "#PWR011" H 3300 2950 50  0001 C CNN
-F 1 "GND" H 3305 3027 50  0000 C CNN
-F 2 "" H 3300 3200 50  0001 C CNN
-F 3 "" H 3300 3200 50  0001 C CNN
-	1    3300 3200
+P 3000 3200
+F 0 "#PWR011" H 3000 2950 50  0001 C CNN
+F 1 "GND" H 3005 3027 50  0000 C CNN
+F 2 "" H 3000 3200 50  0001 C CNN
+F 3 "" H 3000 3200 50  0001 C CNN
+	1    3000 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 5E8989E4
-P 3300 1600
-F 0 "#PWR09" H 3300 1350 50  0001 C CNN
-F 1 "GND" H 3305 1427 50  0000 C CNN
-F 2 "" H 3300 1600 50  0001 C CNN
-F 3 "" H 3300 1600 50  0001 C CNN
-	1    3300 1600
+P 3000 1600
+F 0 "#PWR09" H 3000 1350 50  0001 C CNN
+F 1 "GND" H 3005 1427 50  0000 C CNN
+F 2 "" H 3000 1600 50  0001 C CNN
+F 3 "" H 3000 1600 50  0001 C CNN
+	1    3000 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -313,17 +317,17 @@ Wire Wire Line
 	1350 1350 1250 1350
 Text Label 1300 1250 0    50   ~ 0
 VIN
-Text Label 3300 950  0    50   ~ 0
+Text Label 3000 950  0    50   ~ 0
 VIN
 $Comp
 L power:LINE #PWR010
 U 1 1 5E8AED49
-P 3300 2600
-F 0 "#PWR010" H 3300 2450 50  0001 C CNN
-F 1 "LINE" H 3317 2773 50  0000 C CNN
-F 2 "" H 3300 2600 50  0001 C CNN
-F 3 "" H 3300 2600 50  0001 C CNN
-	1    3300 2600
+P 3000 2600
+F 0 "#PWR010" H 3000 2450 50  0001 C CNN
+F 1 "LINE" H 3017 2773 50  0000 C CNN
+F 2 "" H 3000 2600 50  0001 C CNN
+F 3 "" H 3000 2600 50  0001 C CNN
+	1    3000 2600
 	1    0    0    -1  
 $EndComp
 Wire Notes Line style solid
@@ -368,7 +372,7 @@ Power Input: approx. 15V
 Text Notes 600  2200 0    100  ~ 0
 Power Output: 3.3 to 15V
 Wire Wire Line
-	3300 950  3300 1000
+	3000 950  3000 1000
 Wire Wire Line
 	1000 2600 1000 2650
 Wire Wire Line
@@ -465,34 +469,34 @@ Wire Wire Line
 $Comp
 L Device:C C1
 U 1 1 5E8DB195
-P 2700 2900
-F 0 "C1" H 2815 2946 50  0000 L CNN
-F 1 "100p" H 2815 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2738 2750 50  0001 C CNN
-F 3 "~" H 2700 2900 50  0001 C CNN
-	1    2700 2900
+P 2600 2900
+F 0 "C1" H 2715 2946 50  0000 L CNN
+F 1 "100p" H 2715 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2638 2750 50  0001 C CNN
+F 3 "~" H 2600 2900 50  0001 C CNN
+	1    2600 2900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 5E8DB293
-P 2700 3050
-F 0 "#PWR08" H 2700 2800 50  0001 C CNN
-F 1 "GND" H 2705 2877 50  0000 C CNN
-F 2 "" H 2700 3050 50  0001 C CNN
-F 3 "" H 2700 3050 50  0001 C CNN
-	1    2700 3050
+P 2600 3050
+F 0 "#PWR08" H 2600 2800 50  0001 C CNN
+F 1 "GND" H 2605 2877 50  0000 C CNN
+F 2 "" H 2600 3050 50  0001 C CNN
+F 3 "" H 2600 3050 50  0001 C CNN
+	1    2600 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:LINE #PWR07
 U 1 1 5E8DB309
-P 2700 2750
-F 0 "#PWR07" H 2700 2600 50  0001 C CNN
-F 1 "LINE" H 2717 2923 50  0000 C CNN
-F 2 "" H 2700 2750 50  0001 C CNN
-F 3 "" H 2700 2750 50  0001 C CNN
-	1    2700 2750
+P 2600 2750
+F 0 "#PWR07" H 2600 2600 50  0001 C CNN
+F 1 "LINE" H 2617 2923 50  0000 C CNN
+F 2 "" H 2600 2750 50  0001 C CNN
+F 3 "" H 2600 2750 50  0001 C CNN
+	1    2600 2750
 	1    0    0    -1  
 $EndComp
 Text Notes 4350 1150 0    67   ~ 0
@@ -606,6 +610,7 @@ F 0 "Q1" H 7505 6046 50  0000 L CNN
 F 1 "FQT5P10" H 7505 5955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7500 6100 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/FQT5P10-D.pdf" H 7300 6000 50  0001 C CNN
+F 4 "ON Semiconductor" H 7300 6000 50  0001 C CNN "Manufacturer"
 	1    7300 6000
 	1    0    0    1   
 $EndComp
@@ -658,17 +663,6 @@ Text Notes 4900 5800 0    79   ~ 0
 15^2/10k = 0.02W
 Wire Wire Line
 	8150 5600 8150 5650
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5E96D83B
-P 6550 6000
-F 0 "SW1" H 6550 6235 50  0000 C CNN
-F 1 "A6SX-1104" H 6550 6144 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 6550 6000 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6sn.pdf" H 6550 6000 50  0001 C CNN
-	1    6550 6000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 6000 6350 6000
 Wire Wire Line
@@ -700,7 +694,8 @@ P 5700 2550
 F 0 "D3" V 5654 2629 50  0000 L CNN
 F 1 "MMBZ5223BLT1G" V 5745 2629 50  0000 L CNN
 F 2 "Diode_SMD:D_SOT-23_ANK" H 5700 2550 50  0001 C CNN
-F 3 "~" H 5700 2550 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBZ5221BLT1-D.PDF" H 5700 2550 50  0001 C CNN
+F 4 "ON Semiconductor" V 5700 2550 50  0001 C CNN "Manufacturer"
 	1    5700 2550
 	0    1    1    0   
 $EndComp
@@ -726,4 +721,16 @@ Text Notes 7900 3050 0    50   ~ 0
 VLINE = 1M/R * 2.7, maxes out at VBUS\n"max" VLINE = 270V, with a 270V supply\n   Really only expect 30V supply at most
 Text Notes 8100 2300 0    50   ~ 0
 Power-ish BJT, Ic max=5A, Pmax=1.6W
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5E96D83B
+P 6550 6000
+F 0 "SW1" H 6550 6235 50  0000 C CNN
+F 1 "A6SN-1104" H 6550 6144 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 6550 6000 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6sn.pdf" H 6550 6000 50  0001 C CNN
+F 4 "Omron" H 6550 6000 50  0001 C CNN "Manufacturer"
+	1    6550 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

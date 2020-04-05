@@ -1,0 +1,13 @@
+Id,Designator,Package,Quantity,Designation,Supplier and ref
+1,SW1,SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm,1,A6SN-1104,
+2,"J2,J1","TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",2,1729128,
+3,"D1,D2",LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,2,LO Q976-PS-25-0-20-R18,
+4,U1,SOIC-8_3.9x4.9mm_P1.27mm,1,UA741CDR,
+5,Q2,SOT-223-3_TabPin2,1,2STN1550,
+6,D3,D_SOT-23_ANK,1,MMBZ5223BLT1G,
+7,"C1,C2",C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,2,C0603C101J1GACTU,
+8,C3,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,1,600S0R1BT250XT,
+9,"R1,R2,R4",R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,3, RC0603JR-0710KL ,
+10,R3,R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,1, RC0603JR-071KL ,
+11,Q1,SOT-223-3_TabPin2,1,FQT5P10TF,
+12,RV1,Potentiometer_Bourns_3214W_Vertical,1,3214W-1-105E,
