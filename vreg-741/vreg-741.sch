@@ -24,6 +24,7 @@ F 0 "U1" H 7100 2700 50  0000 L CNN
 F 1 "UA741" H 7100 2600 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7000 2550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ua741.pdf" H 7100 2650 50  0001 C CNN
+F 4 "TI" H 6900 2450 50  0001 C CNN "Manufacturer"
 	1    6900 2450
 	1    0    0    -1  
 $EndComp
@@ -61,6 +62,7 @@ F 0 "Q2" H 7891 2496 50  0000 L CNN
 F 1 "2STN1550" H 7891 2405 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7900 2375 50  0001 L CIN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/2ST(F,N)1550.pdf" H 7700 2450 50  0001 L CNN
+F 4 "ST" H 7700 2450 50  0001 C CNN "MAnufacturer"
 	1    7700 2450
 	1    0    0    -1  
 $EndComp
@@ -150,9 +152,10 @@ L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E89243C
 P 1050 1350
 F 0 "J1" H 970 1025 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 970 1116 50  0000 C CNN
+F 1 "1729128" H 970 1116 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1050 1350 50  0001 C CNN
-F 3 "~" H 1050 1350 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1729128.pdf" H 1050 1350 50  0001 C CNN
+F 4 "Phoenix" H 1050 1350 50  0001 C CNN "Manufacturer"
 	1    1050 1350
 	-1   0    0    1   
 $EndComp
@@ -161,9 +164,10 @@ L Connector:Screw_Terminal_01x02 J2
 U 1 1 5E89247F
 P 1350 2850
 F 0 "J2" H 1430 2842 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 1430 2751 50  0000 L CNN
+F 1 "1729128" H 1430 2751 50  0000 L CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1350 2850 50  0001 C CNN
-F 3 "~" H 1350 2850 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1729128.pdf" H 1350 2850 50  0001 C CNN
+F 4 "Phoenix" H 1350 2850 50  0001 C CNN "Manufacturer"
 	1    1350 2850
 	1    0    0    -1  
 $EndComp
@@ -606,6 +610,7 @@ F 0 "Q1" H 7505 6046 50  0000 L CNN
 F 1 "FQT5P10" H 7505 5955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7500 6100 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/FQT5P10-D.pdf" H 7300 6000 50  0001 C CNN
+F 4 "ON Semiconductor" H 7300 6000 50  0001 C CNN "Manufacturer"
 	1    7300 6000
 	1    0    0    1   
 $EndComp
@@ -658,17 +663,6 @@ Text Notes 4900 5800 0    79   ~ 0
 15^2/10k = 0.02W
 Wire Wire Line
 	8150 5600 8150 5650
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5E96D83B
-P 6550 6000
-F 0 "SW1" H 6550 6235 50  0000 C CNN
-F 1 "A6SX-1104" H 6550 6144 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 6550 6000 50  0001 C CNN
-F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6sn.pdf" H 6550 6000 50  0001 C CNN
-	1    6550 6000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 6000 6350 6000
 Wire Wire Line
@@ -700,7 +694,8 @@ P 5700 2550
 F 0 "D3" V 5654 2629 50  0000 L CNN
 F 1 "MMBZ5223BLT1G" V 5745 2629 50  0000 L CNN
 F 2 "Diode_SMD:D_SOT-23_ANK" H 5700 2550 50  0001 C CNN
-F 3 "~" H 5700 2550 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBZ5221BLT1-D.PDF" H 5700 2550 50  0001 C CNN
+F 4 "ON Semiconductor" V 5700 2550 50  0001 C CNN "Manufacturer"
 	1    5700 2550
 	0    1    1    0   
 $EndComp
@@ -726,4 +721,16 @@ Text Notes 7900 3050 0    50   ~ 0
 VLINE = 1M/R * 2.7, maxes out at VBUS\n"max" VLINE = 270V, with a 270V supply\n   Really only expect 30V supply at most
 Text Notes 8100 2300 0    50   ~ 0
 Power-ish BJT, Ic max=5A, Pmax=1.6W
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5E96D83B
+P 6550 6000
+F 0 "SW1" H 6550 6235 50  0000 C CNN
+F 1 "A6SN-1104" H 6550 6144 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 6550 6000 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6sn.pdf" H 6550 6000 50  0001 C CNN
+F 4 "Omron" H 6550 6000 50  0001 C CNN "Manufacturer"
+	1    6550 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
