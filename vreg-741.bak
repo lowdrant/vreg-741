@@ -21,7 +21,7 @@ P 6900 2450
 AR Path="/5E889F96/5E891CC4" Ref="U?"  Part="1" 
 AR Path="/5E891CC4" Ref="U1"  Part="1" 
 F 0 "U1" H 7100 2700 50  0000 L CNN
-F 1 "UA741" H 7100 2600 50  0000 L CNN
+F 1 "UA741CDR‎" H 7100 2600 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7000 2550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ua741.pdf" H 7100 2650 50  0001 C CNN
 F 4 "TI" H 6900 2450 50  0001 C CNN "Manufacturer"
@@ -50,20 +50,6 @@ F 1 "VBUS" H 6915 2173 50  0000 C CNN
 F 2 "" H 6900 2000 50  0001 C CNN
 F 3 "" H 6900 2000 50  0001 C CNN
 	1    6900 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L marion:MMBT3904 Q?
-U 1 1 5E891CD7
-P 7700 2450
-AR Path="/5E889F96/5E891CD7" Ref="Q?"  Part="1" 
-AR Path="/5E891CD7" Ref="Q2"  Part="1" 
-F 0 "Q2" H 7891 2496 50  0000 L CNN
-F 1 "2STN1550" H 7891 2405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7900 2375 50  0001 L CIN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/2ST(F,N)1550.pdf" H 7700 2450 50  0001 L CNN
-F 4 "ST" H 7700 2450 50  0001 C CNN "MAnufacturer"
-	1    7700 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -145,8 +131,6 @@ F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7350 2900 50 
 	1    0    0    -1  
 $EndComp
 Connection ~ 7350 2450
-Wire Wire Line
-	7350 2450 7500 2450
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E89243C
@@ -176,7 +160,7 @@ L Device:LED D1
 U 1 1 5E892555
 P 3000 1450
 F 0 "D1" V 3038 1333 50  0000 R CNN
-F 1 " 475-2486-1-ND " V 2947 1333 50  0000 R CNN
+F 1 "475-2486-1-ND" V 2947 1333 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 1450 50  0001 C CNN
 F 3 "~" H 3000 1450 50  0001 C CNN
 	1    3000 1450
@@ -503,8 +487,6 @@ Text Notes 4350 1150 0    67   ~ 0
 C2, C3 100pF b/c worked on breadboard without
 Text Notes 4350 950  0    67   ~ 0
 Vz=2.7 gives output range 3v3 to VBUS
-Wire Wire Line
-	7800 2650 7800 2700
 Connection ~ 7800 2700
 Wire Wire Line
 	6900 2000 6900 2200
@@ -731,6 +713,24 @@ F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm" H 655
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6sn.pdf" H 6550 6000 50  0001 C CNN
 F 4 "Omron" H 6550 6000 50  0001 C CNN "Manufacturer"
 	1    6550 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2650 7800 2700
+Wire Wire Line
+	7350 2450 7500 2450
+$Comp
+L marion:MMBT3904 Q?
+U 1 1 5E891CD7
+P 7700 2450
+AR Path="/5E889F96/5E891CD7" Ref="Q?"  Part="1" 
+AR Path="/5E891CD7" Ref="Q2"  Part="1" 
+F 0 "Q2" H 7891 2496 50  0000 L CNN
+F 1 "2STN1550" H 7891 2405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7900 2375 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/2ST(F,N)1550.pdf" H 7700 2450 50  0001 L CNN
+F 4 "ST" H 7700 2450 50  0001 C CNN "MAnufacturer"
+	1    7700 2450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

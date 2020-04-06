@@ -52,20 +52,6 @@ F 3 "" H 6900 2000 50  0001 C CNN
 	1    6900 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L marion:MMBT3904 Q?
-U 1 1 5E891CD7
-P 7700 2450
-AR Path="/5E889F96/5E891CD7" Ref="Q?"  Part="1" 
-AR Path="/5E891CD7" Ref="Q2"  Part="1" 
-F 0 "Q2" H 7891 2496 50  0000 L CNN
-F 1 "2STN1550" H 7891 2405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7900 2375 50  0001 L CIN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/2ST(F,N)1550.pdf" H 7700 2450 50  0001 L CNN
-F 4 "ST" H 7700 2450 50  0001 C CNN "MAnufacturer"
-	1    7700 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 2450 7350 2450
 $Comp
@@ -145,8 +131,6 @@ F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7350 2900 50 
 	1    0    0    -1  
 $EndComp
 Connection ~ 7350 2450
-Wire Wire Line
-	7350 2450 7500 2450
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 5E89243C
@@ -176,7 +160,7 @@ L Device:LED D1
 U 1 1 5E892555
 P 3000 1450
 F 0 "D1" V 3038 1333 50  0000 R CNN
-F 1 " 475-2486-1-ND " V 2947 1333 50  0000 R CNN
+F 1 "475-2486-1-ND" V 2947 1333 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 1450 50  0001 C CNN
 F 3 "~" H 3000 1450 50  0001 C CNN
 	1    3000 1450
@@ -503,8 +487,6 @@ Text Notes 4350 1150 0    67   ~ 0
 C2, C3 100pF b/c worked on breadboard without
 Text Notes 4350 950  0    67   ~ 0
 Vz=2.7 gives output range 3v3 to VBUS
-Wire Wire Line
-	7800 2650 7800 2700
 Connection ~ 7800 2700
 Wire Wire Line
 	6900 2000 6900 2200
@@ -614,8 +596,6 @@ F 4 "ON Semiconductor" H 7300 6000 50  0001 C CNN "Manufacturer"
 	1    7300 6000
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	6750 6000 6950 6000
 $Comp
 L power:VBUS #PWR019
 U 1 1 5E95AEB4
@@ -637,24 +617,8 @@ Wire Notes Line style solid
 	3900 5000 10500 5000
 Text Notes 4100 5200 0    100  ~ 0
 Power Switch: Higher Current Rating
-$Comp
-L Device:R R4
-U 1 1 5E95E7BA
-P 6950 5800
-F 0 "R4" H 7020 5846 50  0000 L CNN
-F 1 "10k" H 7020 5755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6880 5800 50  0001 C CNN
-F 3 "~" H 6950 5800 50  0001 C CNN
-	1    6950 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 5950 6950 6000
-Connection ~ 6950 6000
 Wire Wire Line
 	6950 6000 7100 6000
-Wire Wire Line
-	6950 5550 6950 5650
 Wire Wire Line
 	6950 5550 7400 5550
 Wire Wire Line
@@ -733,4 +697,40 @@ F 4 "Omron" H 6550 6000 50  0001 C CNN "Manufacturer"
 	1    6550 6000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7800 2650 7800 2700
+Wire Wire Line
+	7350 2450 7500 2450
+$Comp
+L marion:MMBT3904 Q?
+U 1 1 5E891CD7
+P 7700 2450
+AR Path="/5E889F96/5E891CD7" Ref="Q?"  Part="1" 
+AR Path="/5E891CD7" Ref="Q2"  Part="1" 
+F 0 "Q2" H 7891 2496 50  0000 L CNN
+F 1 "2STN1550" H 7891 2405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7900 2375 50  0001 L CIN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/ST%20Microelectronics%20PDFS/2ST(F,N)1550.pdf" H 7700 2450 50  0001 L CNN
+F 4 "ST" H 7700 2450 50  0001 C CNN "MAnufacturer"
+	1    7700 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5550 6950 5650
+Wire Wire Line
+	6950 5950 6950 6000
+$Comp
+L Device:R R4
+U 1 1 5E95E7BA
+P 6950 5800
+F 0 "R4" H 7020 5846 50  0000 L CNN
+F 1 "10k" H 7020 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6880 5800 50  0001 C CNN
+F 3 "~" H 6950 5800 50  0001 C CNN
+	1    6950 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 6000
+Wire Wire Line
+	6750 6000 6950 6000
 $EndSCHEMATC
